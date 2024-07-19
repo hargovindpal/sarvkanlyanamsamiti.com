@@ -1,16 +1,17 @@
 {
-  "homepage": "https://hargovindpal.github.io/reactapp",
+  "homepage": "https://hargovindpal.github.io/sarvkanlyanamsamiti.com",
   "name": "sks_jhansi",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
+    "start": "vite",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "vite build"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
