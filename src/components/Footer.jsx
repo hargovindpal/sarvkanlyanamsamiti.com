@@ -16,11 +16,6 @@ const Footer = () => {
                             development of society.
                             Our mission is to enhance the quality of life for individuals...</p>
                         <button className="button3" type="submit">Know More</button>
-                        <div className="payment-option">
-                            <img src="src/assets/icons/card.png" />
-                            <img src="src/assets/icons/google-pay.png" />
-                            <img src="src/assets/icons/paytm.png" />
-                        </div>
                     </div>
 
                 </div>

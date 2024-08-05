@@ -7,8 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',  // Ensure this matches the deploy script directory
   },
-  base: '/sks_jhansi/', 
+  base: '/sarvkanlyanamsamiti.com/', 
 });
 
 
-  

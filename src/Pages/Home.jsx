@@ -1,8 +1,24 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import slide1 from '../assets/slides/1.jpg';
+import slide2 from '../assets/slides/2.jpg';
+import slide3 from '../assets/slides/3.jpg';
+import slide4 from '../assets/slides/4.jpeg';
+import praveenGupta from '../assets/team/Dr._Praveen_Gupta.png';
+import kailashNarayan from '../assets/team/Kailash_Narayan_Gupta.png';
+import robinJoseph from '../assets/team/Dr._Robin_Joseph.png';
+import sponser1 from '../assets/sponser/1.jpg';
+import sponser2 from '../assets/sponser/2.jpg';
+import sponser3 from '../assets/sponser/3.jpg';
+import sponser4 from '../assets/sponser/4.jpg';
+import sponser5 from '../assets/sponser/5.jpg';
+import sponser6 from '../assets/sponser/6.jpg';
 const Home = () => {
+    alert('hello');
   return (
+
     <>
+
     <div id="maincarousel" className="mgn-minus carousel slide section1" data-bs-ride="carousel">
  
         <div className="carousel-indicators">
@@ -15,7 +31,7 @@ const Home = () => {
 
         <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="1500">
-                <img data-aos="zoom-in-down" data-aos-duration="1000" src="src/assets/slides/1.jpg" alt=""/>
+                <img data-aos="zoom-in-down" data-aos-duration="1000" src={slide1} alt="slide-1"/>
                 <div className="carousel-caption">
                     <h1 data-aos="zoom-in-down" data-aos-duration="1000">SARV KALYANAM SAMITI</h1>
                     <h3>Is dedicated to the holistic development of individuals for a stronger nation.</h3>
@@ -23,7 +39,7 @@ const Home = () => {
             </div>
 
             <div className="carousel-item" data-bs-interval="2000">
-                <img src="src/assets/slides/3.jpg" alt=""/>
+                <img src={slide3} alt="slide-3"/>
                 <div className="carousel-caption">
                     <h1 data-aos="zoom-in-down" data-aos-duration="6000">SARV KALYANAM SAMITI</h1>
                     <h3>Establishes educational institutions without discrimination to promote universal education.</h3>
@@ -31,14 +47,14 @@ const Home = () => {
             </div>
 
             <div className="carousel-item" data-bs-interval="2000">
-                <img src="src/assets/slides/2.jpg" alt=""/>
+                <img src={slide2} alt="slide-2"/>
                 <div className="carousel-caption">
                     <h1 data-aos="zoom-in-down" data-aos-duration="1000">SARV KALYANAM SAMITI</h1>
                     <h3>Sets up advanced laboratories and hospitals for pioneering research and healthcare</h3>
                 </div>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-                <img src="src/assets/slides/4.jpeg" alt=""/>
+                <img src={slide4} alt="slide-4"/>
             </div>
             
         </div>
@@ -150,7 +166,7 @@ const Home = () => {
                                 <button className="button3" type="submit">Know More</button>
                             </div>
                             <div className="imgcontent">
-                                <img className="team-img" src="src/assets/team/Dr._Praveen_Gupta.png"/>
+                                <img className="team-img" src={praveenGupta}/>
                                 <div className="team-title">
                                     <p className="name">Dr. Praveen Gupta</p>
                                     <p className="designation">( President )</p>
@@ -193,7 +209,7 @@ const Home = () => {
                                 <button className="button3" type="submit">Know More</button>
                             </div>
                             <div className="imgcontent">
-                                <img className="team-img" src="src/assets/team/Kailash_Narayan_Gupta.png"/>
+                                <img className="team-img" src={kailashNarayan}/>
                                 <div className="team-title">
                                     <p className="name">Er. Kailash Narayan Gupta</p>
                                     <p className="designation">( Patron )</p>
@@ -232,7 +248,7 @@ const Home = () => {
                                 <button className="button3" type="submit">Know More</button>
                             </div>
                             <div className="imgcontent">
-                                <img className="team-img" src="src/assets/team/Dr._Robin_Joseph.png"/>
+                                <img className="team-img" src={robinJoseph}/>
                                 <div className="team-title">
                                     <p className="name">Dr. Robin Joseph</p>
                                     <p className="designation">( Secretary/Manager )</p>
@@ -266,33 +282,33 @@ const Home = () => {
                     ></iframe>
             </div>
             <div className="content border box-shadow">
-                <form className="contact-form border" data-aos="zoom-in-left" data-aos-duration="2000">
+                <form className="contact-form border" data-aos="zoom-in-left" data-aos-duration="2000" id="form">
                     <h2 className="heading">GET IN TOUCH WITH US-FORM</h2>
                     <div className="form-container">
                         <div className="row">
                             <div className="item">
-                                <input type="text" id="name" name="name" placeholder="Enter Your Name"/>
+                                <input type="text" id="name" placeholder="Enter Your Name"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="item">
-                                <input type="email" id="email" name="email" placeholder="Enter Your Email ID"/>
+                                <input type="email" id="email"placeholder="Enter Your Email ID"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="item">
-                                <input type="number" id="contact" name="contact" placeholder="Enter Your Mobile Number"/>
+                                <input type="number" id="contact" placeholder="Enter Your Mobile Number"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="item">
-                                <textarea type="text" id="message" name="message"
+                                <textarea type="text" id="message"
                                     placeholder="Write a Message"></textarea>
                             </div>
                         </div>
                         <div className="row">
                             <div className="item">
-                                <button id="button2" type="submit" name="submit">GET CONNECT</button>
+                                <button id="button2" type="submit">GET CONNECT</button>
                             </div>
                         </div>
                     </div>
@@ -308,12 +324,12 @@ const Home = () => {
         <div className="section-container">
 
             <div className="sponsers">
-                <figure data-aos="zoom-in-right" data-aos-duration="2000"><img src="src/assets/sponser/2.jpg"/></figure>
-                <figure data-aos="zoom-in" data-aos-duration="2000"><img src="src/assets/sponser/3.jpg"/></figure>
-                <figure data-aos="zoom-in-right" data-aos-duration="2000"><img src="src/assets/sponser/4.jpg"/></figure>
-                <figure data-aos="zoom-in" data-aos-duration="2000"><img src="src/assets/sponser/1.jpg"/></figure>
-                <figure data-aos="zoom-in-left" data-aos-duration="2000"><img src="src/assets/sponser/5.jpg"/></figure>
-                <figure data-aos="zoom-in-left" data-aos-duration="2000"><img src="src/assets/sponser/6.jpg"/></figure>
+                <figure data-aos="zoom-in-right" data-aos-duration="2000"><img src={sponser1}/></figure>
+                <figure data-aos="zoom-in" data-aos-duration="2000"><img src={sponser2}/></figure>
+                <figure data-aos="zoom-in-right" data-aos-duration="2000"><img src={sponser3}/></figure>
+                <figure data-aos="zoom-in" data-aos-duration="2000"><img src={sponser4}/></figure>
+                <figure data-aos="zoom-in-left" data-aos-duration="2000"><img src={sponser5}/></figure>
+                <figure data-aos="zoom-in-left" data-aos-duration="2000"><img src={sponser6}/></figure>
             </div>
         </div>
     </div>
@@ -321,4 +337,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

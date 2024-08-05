@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo from '../assets/icons/logo.png';
+
 const Header = () => {
   return (
     <>
@@ -19,7 +21,7 @@ const Header = () => {
     </div>
     <header id="head">
         <div className="logo">
-            <Link className="link" to="/Home"><img src="src/assets/icons/logo.png"/></Link>
+            <Link className="link" to="/Home"><img src={logo} alt="Logo" /></Link>
         </div>
         <div className="logo-text">
             <h1>SARV KALYANAM SAMITI</h1>
@@ -52,7 +54,7 @@ const Header = () => {
                         <li className="nav-item dropdown">
                             <Link className="link nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false"> ABOUT</Link>
                             <ul className="dropdown-menu dropdown-menu-dark">
-                                <li><Link className="link dropdown-item" href="IntroductionToSKS.html">INTRODUCTION TO SKS</Link></li>
+                                <li><Link className="link dropdown-item" to="/IntroductionToSKS.html">INTRODUCTION TO SKS</Link></li>
                                 <li><Link className="link dropdown-item" href="ourvision.html">MISSION & VISION</Link></li>
                                 <li><Link className="link dropdown-item" href="Patron'sMessage.html">PATRON'S MESSAGE</Link></li>
                                 <li><Link className="link dropdown-item" href="President'sMessage.html">PRESIDENT'S MESSAGE</Link></li>
@@ -118,10 +120,6 @@ const Header = () => {
                         </li>
 
                     </ul>
-                    <form className="d-flex mt-3" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button className="btn btn-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </div>
